@@ -61,7 +61,7 @@ CHIP ALU {
    // 处理输出
    // no 
    Not16(in = o1, out = o2);
-   Mux16(a = o1, b = o2, sel = no, out = o3);
+   Mux16(a = o1, b = o2, sel = no, out = out, out = o3);
 
    // zr , 对输出各个位按位或，可得是否为全0
    Or16Way(in = o3, out = zr1);
