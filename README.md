@@ -8,9 +8,10 @@
 
 [nandgame](https://nandgame.com/)是一个极好的实验可视化工具。
 
+[注意点]： 需要将 hdl 文件放到与脚本同一目录下，tst 脚本才能正常执行。我为了分类将测试文件放到了./scripts目录下了，因此测试得时候需要暂时将hdl文件放置./scripts目录下。
 # 已完成
 
 - [x] 环境配置
 - [x] 基本门电路，数据选择器、数据分配器；多路基本门电路，多路数据选择/分配器
-- [ ] 布尔算术（Boolean arithmatic）
-  - 半加器（HalfAdder）、 全加器（FullAdder）
+- [x] 布尔算术（Boolean arithmatic）
+  - 半加器（HalfAdder）、 全加器（FullAdder）、算数逻辑单元（ALU）
