@@ -17,3 +17,5 @@
 - [x] 基本门电路，数据选择器、数据分配器；多路基本门电路，多路数据选择/分配器
 - [x] 布尔算术（Boolean arithmatic）
   - 半加器（HalfAdder）、 全加器（FullAdder）、算数逻辑单元（ALU）
+- [ ] 时序逻辑
+  - 锁存器（Flip-Flops）、寄存器、程序计数器PC
