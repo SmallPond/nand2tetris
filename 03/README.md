@@ -7,7 +7,9 @@
 - 时序逻辑：out[t] = f(in[t-1]) -> state[t] = f(state[t-1])
 - 时序逻辑需要考虑电平延迟，则需要选择一个恰当的时钟周期
 
-# 实现
+# 实现（a部分）
+
+[project3](https://www.nand2tetris.org/project03)
 
 - D-触发器（Flip-Flops）：out[t] = in[t-1]
 - 寄存器（Register）: 保存1个bit的信息。
@@ -36,3 +38,13 @@
 使用8个RAM8组成，使用address[0..2] 选RAM8片内寄存器，address[3..5] 作为 3-8 译码器输入，输出选8个RAM8。
 
 6. PC: 使用三个 MUX16 分配选择输出即可。 注意选择顺序为： inc->load->reset。 
+
+![PC](../images/pc.png)
+
+# 实现（b部分）
+
+- RAM512
+- RAM4K
+- RAM16K
+
+这部分就是实现RAM的字扩展。以RAM512为例，可以使用 8 个（2^9/2^6 = 2^3 ）RAM64组成。高 3 位地址线接 3-8 译码器用来做片选，低6位地址线并接到所有 RAM64的地址线上。
